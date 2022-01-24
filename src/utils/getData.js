@@ -1,4 +1,4 @@
-const API = 'https://randomuser.me/api/';
+const API = process.env.API;//LLEYENDO LA VARIBALE DE ENTORNO CON WEBPACK
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;
